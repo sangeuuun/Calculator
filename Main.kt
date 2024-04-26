@@ -4,6 +4,7 @@ fun main() {
     var isValidInput = true
     while (isValidInput) {
         try {
+            println("--------------------")
             println("연산자(+,-,*,/,%)를 입력하세요")
             val operator = readLine().toString()
 
