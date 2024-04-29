@@ -19,6 +19,11 @@ fun main() {
             println("두 번째 숫자를 입력하세요")
             val num2 = readLine()!!.toInt()
 
+            if (operator == "/" && num2 == 0) {
+                println("0으로 나눌 수 없습니다.")
+                continue
+            }
+
             selectedOperator(operator, num1, num2)
 
             isValidInput = false
