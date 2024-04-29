@@ -44,6 +44,7 @@ fun selectedOperator(operator: String, num1: Int, num2: Int) {
             return
         }
     }
+
     val result = calc.Operation(selectOp, num1, num2)
     println("${num1} ${operator} ${num2} = ${result}")
 
