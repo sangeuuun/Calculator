@@ -48,31 +48,3 @@ fun selectedOperator(operator: String, num1: Int, num2: Int) {
     println("${num1} ${operator} ${num2} = ${result}")
 
 }
-
-abstract class Operator {
-    abstract fun operation(num1: Int, num2: Int): Double
-}
-
-class Calculator {
-    fun Operation(operator: Operator, num1: Int, num2: Int): Double = operator.operation(num1, num2)
-}
-
-class AddOperation : Operator() {
-    override fun operation(num1: Int, num2: Int): Double = (num1 + num2).toDouble()
-}
-
-class SubstractOperation: Operator(){
-    override fun operation(num1:Int,num2:Int):Double = (num1-num2).toDouble()
-}
-
-class MultiplyOperation: Operator(){
-    override fun operation(num1:Int,num2:Int):Double = (num1*num2).toDouble()
-}
-
-class DivideOperation: Operator(){
-    override fun operation(num1:Int,num2:Int):Double = (num1/num2).toDouble()
-}
-
-class RemainderOperation: Operator() {
-    override fun operation(num1:Int,num2:Int):Double = (num1%num2).toDouble()
-}
